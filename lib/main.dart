@@ -1,24 +1,45 @@
-import 'package:cuckoo_workshop_start/animate.dart';
 import 'package:flutter/material.dart';
-import 'home.dart';
+
+import 'package:cuckoo_workshop_start/utilities/custom_colors.dart';
+import 'package:cuckoo_workshop_start/routes/home.dart';
+import 'package:cuckoo_workshop_start/routes/listview.dart';
+import 'package:cuckoo_workshop_start/routes/grid.dart';
+import 'package:cuckoo_workshop_start/routes/animate.dart';
+import 'package:cuckoo_workshop_start/routes/transform.dart';
+
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Cuckoo Workshop',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        //TODO Add custom swatch
-        //TODO Add texttheme
+        primarySwatch: MaterialColor(0xFF00F8AD, CustomColors.neonGreenMaterialSwatch),
+        textTheme: TextTheme(
+          headline1: TextStyle(fontSize: 50.0, fontFamily: 'Pangram-Black', color: Colors.black),
+          headline2: TextStyle(fontSize: 50.0, fontFamily: 'Pangram-Black', color: Colors.white),
+          headline3: TextStyle(fontSize: 30.0, fontFamily: 'Pangram-Black', color: Colors.black),
+          headline4: TextStyle(fontSize: 30.0, fontFamily: 'Pangram-Black', color: Colors.white),
+          bodyText1: TextStyle(fontSize: 14.0, fontFamily: 'Montserrat', color: Colors.white),
+          bodyText2: TextStyle(fontSize: 14.0, fontFamily: 'Montserrat', color: Colors.black),
+          subtitle1: TextStyle(fontSize: 16.0, fontFamily: 'OverpassMono', color: Colors.black),
+          subtitle2: TextStyle(fontSize: 14.0, fontFamily: 'OverpassMono', color: Colors.black),
+        ),
       ),
-      // TODO Add routing
-      home: AnimateRoute(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => HomeRoute(),
+        '/listview': (context) => ListviewRoute(),
+        '/grid': (context) => GridRoute(),
+        '/animate': (context) => AnimateRoute(),
+        '/transform': (context) => TransformRoute(),
+      },
     );
   }
 }
+
