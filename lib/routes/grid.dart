@@ -35,13 +35,16 @@ class _GridRouteState extends State<GridRoute> {
                 child: GridView.builder(
                     gridDelegate:
                         SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 150, childAspectRatio: 3 / 2, crossAxisSpacing: 20, mainAxisSpacing: 20),
+                    itemCount: myList.length,
                     itemBuilder: (context, i) {
                       return Card(
                         color: Colors.black,
-                          //TODO Add padding
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
                           child: GridTile(
                             child: Icon(myList[i], color: Colors.white, size: 40.0),
                           ),
+                        ),
                       );
                     }),
               ),
