@@ -6,12 +6,9 @@ import 'package:cuckoo_workshop_start/routes/listview.dart';
 import 'package:cuckoo_workshop_start/routes/grid.dart';
 import 'package:cuckoo_workshop_start/routes/animate.dart';
 import 'package:cuckoo_workshop_start/routes/transform.dart';
-import 'package:firebase_core/firebase_core.dart';
 
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+void main() {
   runApp(MyApp());
 }
 

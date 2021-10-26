@@ -34,7 +34,7 @@ class _GridRouteState extends State<GridRoute> {
                 padding: const EdgeInsets.all(15.0),
                 child: GridView.builder(
                     gridDelegate:
-                        SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 150, childAspectRatio: 3 / 2, crossAxisSpacing: 40, mainAxisSpacing: 40),
+                        SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 150, childAspectRatio: 3 / 2, crossAxisSpacing: 20, mainAxisSpacing: 20),
                     itemCount: myList.length,
                     itemBuilder: (context, i) {
                       return Card(

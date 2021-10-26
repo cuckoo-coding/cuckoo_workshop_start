@@ -35,12 +35,8 @@ class _TransformRouteState extends State<TransformRoute> {
           padding: const EdgeInsets.only(top: 20.0, bottom: 200),
           //TODO Set value dynamically and add setState in Slider onChanged
           child: Slider(
-              onChanged: (double value) {
-                setState(() {
-                  _rotationFactor = value;
-                });
-              },
-              value: _rotationFactor),
+              onChanged: (double value) {},
+              value: 0),
         ),
       ]),
     );
