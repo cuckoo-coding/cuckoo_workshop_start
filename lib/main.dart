@@ -3,7 +3,6 @@ import 'package:cuckoo_workshop_start/routes/grid.dart';
 import 'package:cuckoo_workshop_start/routes/home.dart';
 import 'package:cuckoo_workshop_start/routes/listview.dart';
 import 'package:cuckoo_workshop_start/routes/transform.dart';
-import 'package:cuckoo_workshop_start/utilities/custom_colors.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,8 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Cuckoo Workshop',
       theme: ThemeData(
-        primarySwatch:
-            MaterialColor(0xFF00F8AD, CustomColors.neonGreenMaterialSwatch),
+        colorScheme: ColorScheme.fromSeed(seedColor: Color(0xFF00F8AD)),
         textTheme: TextTheme(
           displayLarge: TextStyle(
               fontSize: 50.0, fontFamily: 'Pangram-Black', color: Colors.black),

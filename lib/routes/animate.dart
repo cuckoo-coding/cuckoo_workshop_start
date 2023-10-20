@@ -19,12 +19,12 @@ class _AnimateRouteState extends State<AnimateRoute> {
       // TODO Wrap Column in Animated opacity
       body: Column(children: [
         Container(
-          width: MediaQuery.of(context).size.width,
+          width: MediaQuery.sizeOf(context).width,
           padding: const EdgeInsets.only(top: 70.0, bottom: 30.0),
           child: Center(
             child: Image.asset(
               'assets/pics/cuckoo.png',
-              width: MediaQuery.of(context).size.width / 2,
+              width: MediaQuery.sizeOf(context).width / 2,
               fit: BoxFit.cover,
             ),
           ),
