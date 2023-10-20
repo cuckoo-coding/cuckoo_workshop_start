@@ -11,7 +11,7 @@ class _HomeRouteState extends State<HomeRoute> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('Menu', style: Theme.of(context).textTheme.headline3),
+        title: Text('Menu', style: Theme.of(context).textTheme.displayMedium),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -32,7 +32,7 @@ class _HomeRouteState extends State<HomeRoute> {
                   height: 50,
                   child: Text(
                     'Listview',
-                    style: Theme.of(context).textTheme.headline1,
+                    style: Theme.of(context).textTheme.displayLarge,
                   )),
             ),
           ),
@@ -44,7 +44,7 @@ class _HomeRouteState extends State<HomeRoute> {
                 height: 50,
                 child: Text(
                   'Grid',
-                  style: Theme.of(context).textTheme.headline1,
+                  style: Theme.of(context).textTheme.displayLarge,
                 ),
               ),
             ),
@@ -57,7 +57,7 @@ class _HomeRouteState extends State<HomeRoute> {
                 height: 50,
                 child: Text(
                   'Animate',
-                  style: Theme.of(context).textTheme.headline1,
+                  style: Theme.of(context).textTheme.displayLarge,
                 ),
               ),
             ),
@@ -70,7 +70,7 @@ class _HomeRouteState extends State<HomeRoute> {
                 height: 50,
                 child: Text(
                   'Transform',
-                  style: Theme.of(context).textTheme.headline1,
+                  style: Theme.of(context).textTheme.displayLarge,
                 ),
               ),
             ),

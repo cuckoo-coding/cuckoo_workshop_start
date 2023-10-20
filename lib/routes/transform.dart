@@ -1,4 +1,5 @@
 import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class TransformRoute extends StatefulWidget {
@@ -14,9 +15,11 @@ class _TransformRouteState extends State<TransformRoute> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('Transform', style: Theme.of(context).textTheme.headline3),
+        title:
+            Text('Transform', style: Theme.of(context).textTheme.displayMedium),
       ),
-      body: Column(mainAxisAlignment: MainAxisAlignment.start, children: <Widget>[
+      body:
+          Column(mainAxisAlignment: MainAxisAlignment.start, children: <Widget>[
         Padding(
           padding: const EdgeInsets.only(top: 70.0, bottom: 30.0),
           child: Transform(
@@ -34,9 +37,7 @@ class _TransformRouteState extends State<TransformRoute> {
         Padding(
           padding: const EdgeInsets.only(top: 20.0, bottom: 200),
           //TODO Set value dynamically and add setState in Slider onChanged
-          child: Slider(
-              onChanged: (double value) {},
-              value: 0),
+          child: Slider(onChanged: (double value) {}, value: 0),
         ),
       ]),
     );

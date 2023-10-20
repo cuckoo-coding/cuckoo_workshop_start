@@ -13,7 +13,8 @@ class _AnimateRouteState extends State<AnimateRoute> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('Animate', style: Theme.of(context).textTheme.headline3),
+        title:
+            Text('Animate', style: Theme.of(context).textTheme.displayMedium),
       ),
       // TODO Wrap Column in Animated opacity
       body: Column(children: [
@@ -30,27 +31,27 @@ class _AnimateRouteState extends State<AnimateRoute> {
         ),
         Text(
           "Everything fades away eventually....",
-          style: Theme.of(context).textTheme.bodyText1,
+          style: Theme.of(context).textTheme.bodyMedium,
         ),
         Text(
           "And returns.",
-          style: Theme.of(context).textTheme.bodyText1,
+          style: Theme.of(context).textTheme.bodyMedium,
         ),
         Text(
           "And fades.",
-          style: Theme.of(context).textTheme.bodyText1,
+          style: Theme.of(context).textTheme.bodyMedium,
         ),
         Text(
           "And returns.",
-          style: Theme.of(context).textTheme.bodyText1,
+          style: Theme.of(context).textTheme.bodyMedium,
         ),
         Text(
           "And fades.",
-          style: Theme.of(context).textTheme.bodyText1,
+          style: Theme.of(context).textTheme.bodyMedium,
         ),
         Text(
           "Ah whatever...",
-          style: Theme.of(context).textTheme.bodyText1,
+          style: Theme.of(context).textTheme.bodyMedium,
         ),
       ]),
       floatingActionButton: FloatingActionButton(
