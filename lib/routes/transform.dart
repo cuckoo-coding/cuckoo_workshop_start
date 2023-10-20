@@ -14,7 +14,7 @@ class _TransformRouteState extends State<TransformRoute> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('Transform', style: Theme.of(context).textTheme.headline3),
+        title: Text('Transform', style: Theme.of(context).textTheme.displaySmall),
       ),
       body: Column(mainAxisAlignment: MainAxisAlignment.start, children: <Widget>[
         Padding(
@@ -23,10 +23,10 @@ class _TransformRouteState extends State<TransformRoute> {
             transform: Matrix4.identity()
               ..setEntry(3, 2, 0.001)
               ..rotateY(pi * _rotationFactor),
-            origin: Offset(MediaQuery.of(context).size.width / 4, 0),
+            origin: Offset(MediaQuery.sizeOf(context).width / 4, 0),
             child: Image.asset(
               'assets/pics/cuckoo.png',
-              width: MediaQuery.of(context).size.width / 2,
+              width: MediaQuery.sizeOf(context).width / 2,
               fit: BoxFit.cover,
             ),
           ),

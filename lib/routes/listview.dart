@@ -17,11 +17,11 @@ class _ListviewRouteState extends State<ListviewRoute> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      appBar: AppBar(title: Text("Listview", style: Theme.of(context).textTheme.headline3)),
+      appBar: AppBar(title: Text("Listview", style: Theme.of(context).textTheme.displaySmall)),
       body: Column(children: <Widget>[
         Padding(
           padding: const EdgeInsets.only(top: 50.0, bottom: 30.0),
-          child: Text("My Listview Header", style: Theme.of(context).textTheme.headline4),
+          child: Text("My Listview Header", style: Theme.of(context).textTheme.headlineMedium),
         ),
         Expanded(
           child: ListView.builder(

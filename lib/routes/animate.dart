@@ -13,44 +13,44 @@ class _AnimateRouteState extends State<AnimateRoute> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('Animate', style: Theme.of(context).textTheme.headline3),
+        title: Text('Animate', style: Theme.of(context).textTheme.displaySmall),
       ),
       // TODO Wrap Column in Animated opacity
       body: Column(children: [
         Container(
-          width: MediaQuery.of(context).size.width,
+          width: MediaQuery.sizeOf(context).width,
           padding: const EdgeInsets.only(top: 70.0, bottom: 30.0),
           child: Center(
             child: Image.asset(
               'assets/pics/cuckoo.png',
-              width: MediaQuery.of(context).size.width / 2,
+              width: MediaQuery.sizeOf(context).width / 2,
               fit: BoxFit.cover,
             ),
           ),
         ),
         Text(
           "Everything fades away eventually....",
-          style: Theme.of(context).textTheme.bodyText1,
+          style: Theme.of(context).textTheme.bodyLarge,
         ),
         Text(
           "And returns.",
-          style: Theme.of(context).textTheme.bodyText1,
+          style: Theme.of(context).textTheme.bodyLarge,
         ),
         Text(
           "And fades.",
-          style: Theme.of(context).textTheme.bodyText1,
+          style: Theme.of(context).textTheme.bodyLarge,
         ),
         Text(
           "And returns.",
-          style: Theme.of(context).textTheme.bodyText1,
+          style: Theme.of(context).textTheme.bodyLarge,
         ),
         Text(
           "And fades.",
-          style: Theme.of(context).textTheme.bodyText1,
+          style: Theme.of(context).textTheme.bodyLarge,
         ),
         Text(
           "Ah whatever...",
-          style: Theme.of(context).textTheme.bodyText1,
+          style: Theme.of(context).textTheme.bodyLarge,
         ),
       ]),
       floatingActionButton: FloatingActionButton(
