@@ -26,6 +26,8 @@ class _HomeRouteState extends State<HomeRoute> {
               fit: BoxFit.cover,
             ),
           ),
+          //TODO Wrappe jedes Card-Widget in ein GestureDetector-Widget und rufe Navigator.pushNamed(context, "Name der Route") bei Klick auf.
+          //TODO Kannst du das noch kürzer programmieren?
           Card(
             child: Padding(
               padding: const EdgeInsets.all(3.0),

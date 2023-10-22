@@ -31,7 +31,8 @@ class _ListviewRouteState extends State<ListviewRoute> {
         ),
         Expanded(
           child: ListView.builder(
-              // TODO Show String list
+              // TODO Anstatt hier dreimal das gleiche Element zu zeigen, zeige die Liste oben an
+              // TODO Extra: Wenn das easy war, versuche mal, eine Liste von Objekten anzulegen, die sowohl einen Tiel als auch einen Subtitel haben
               itemCount: 3,
               itemBuilder: (context, i) {
                 return Card(
@@ -50,26 +51,32 @@ class _ListviewRouteState extends State<ListviewRoute> {
                 );
               }),
         ),
-        // TODO Open Simulator and show me
+        // TODO Öffne den Simulator und schau, wie der Button aussieht
         Platform.isIOS
             ? Padding(
                 padding: const EdgeInsets.only(bottom: 50.0),
                 child: CupertinoButton(
-                    color: Colors.pink,
-                    onPressed: () {},
-                    child: const Text(
-                      "IOS Button",
-                      style: TextStyle(
-                          color: Colors.white, fontFamily: "Montserrat"),
-                    )))
+                  color: Colors.pink,
+                  onPressed: () {},
+                  child: Text(
+                    "IOS Button",
+                    style: Theme.of(context)
+                        .textTheme
+                        .displayMedium!
+                        .copyWith(color: Colors.white),
+                  ),
+                ),
+              )
             : Padding(
                 padding: const EdgeInsets.only(bottom: 20.0),
                 child: ElevatedButton(
                   onPressed: () {},
-                  child: const Text(
+                  child: Text(
                     'Android Button',
-                    style: TextStyle(
-                        color: Colors.white, fontFamily: "Montserrat"),
+                    style: Theme.of(context)
+                        .textTheme
+                        .displayMedium!
+                        .copyWith(color: Colors.white),
                   ),
                 ),
               ),

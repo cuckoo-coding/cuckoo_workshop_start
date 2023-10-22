@@ -16,7 +16,7 @@ class _AnimateRouteState extends State<AnimateRoute> {
         title:
             Text('Animate', style: Theme.of(context).textTheme.displayMedium),
       ),
-      // TODO Wrap Column in Animated opacity
+      // TODO Wrappe die Column in ein AnimatedOpacity-Widget
       body: Column(children: [
         Container(
           width: MediaQuery.sizeOf(context).width,
@@ -55,7 +55,7 @@ class _AnimateRouteState extends State<AnimateRoute> {
         ),
       ]),
       floatingActionButton: FloatingActionButton(
-        //TODO  Create variable buttonClicked, switch buttonClicked in function
+        //TODO  Definiere eine Variable buttonClicked, switche den Wert der Variablen bei Aufruf dieser Funktion um anzuzeigen, ob der Button geklickt wurde
         onPressed: () {},
         tooltip: 'Animation',
         child: Icon(
