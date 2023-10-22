@@ -1,17 +1,5 @@
 # cuckoo_workshop_start
 
-A Flutter workshop for beginners.
+A Flutter workshop for beginners. This is the initial app with some TODOs to do. If you want to cheat, there is another repo with the solution. You'll get the link in the workshop :) 
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
 # cuckoo_workshop_start
